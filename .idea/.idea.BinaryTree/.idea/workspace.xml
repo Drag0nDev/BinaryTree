@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BinaryTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BinaryTree/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryTree/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/MainWindow.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryTree/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTree/obj/Debug/BinaryTree_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/obj/Debug/BinaryTree_MarkupCompile.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryTree/obj/Debug/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/obj/Debug/MainWindow.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryTree/obj/Debug/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/obj/Debug/MainWindow.g.i.cs" afterDir="false" />
     </list>
@@ -26,8 +25,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BinaryTree/MainWindow.xaml.cs" />
         <option value="$PROJECT_DIR$/BinaryTree/MainWindow.xaml" />
+        <option value="$PROJECT_DIR$/BinaryTree/MainWindow.xaml.cs" />
       </list>
     </option>
   </component>
@@ -43,6 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="BinaryTree" type="DotNetProject" factoryName=".NET Project">
@@ -75,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589279519212</updated>
       <workItem from="1589279520589" duration="230000" />
-      <workItem from="1589279824607" duration="4906000" />
+      <workItem from="1589279824607" duration="7738000" />
     </task>
     <servers />
   </component>
@@ -85,21 +85,21 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="WindowStateProjectService">
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1589287247654">
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom" timestamp="1589290480384">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589287247654" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1589287247654">
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589290480384" />
+    <state width="1493" height="138" key="GridCell.Tab.0.center" timestamp="1589290480384">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589287247654" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1589287247654">
+    <state width="1493" height="138" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589290480384" />
+    <state width="1493" height="138" key="GridCell.Tab.0.left" timestamp="1589290480383">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589287247654" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1589287247654">
+    <state width="1493" height="138" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589290480383" />
+    <state width="1493" height="138" key="GridCell.Tab.0.right" timestamp="1589290480384">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589287247654" />
+    <state width="1493" height="138" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589290480384" />
   </component>
 </project>
