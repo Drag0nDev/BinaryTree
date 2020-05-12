@@ -30,18 +30,24 @@ namespace BinaryTree
                 s += " " + input.Text;
             }
 
-            unsortedList.Text = s;
-            
             //input the new value in the Tree
             myTree.AddRc(Int32.Parse(input.Text));
             
-            //print sorted tree
+            //make sorted tree list
             string treeString = "";
             myTree.Print(null, ref treeString);
-            sortedList.Text = treeString;
+            
+            //print the lists
+            PrintLists(ref s, ref treeString);
             
             //clear the input field
             input.Clear();
+        }
+
+        private void PrintLists(ref string unsorted, ref string sorted)
+        {
+            unsortedList.Text = unsorted;
+            sortedList.Text = sorted;
         }
     }
 }
