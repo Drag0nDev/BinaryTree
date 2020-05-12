@@ -1,4 +1,6 @@
-﻿namespace BinaryTree
+﻿using System.Windows.Controls;
+
+namespace BinaryTree
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

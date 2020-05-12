@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BinaryTree"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="350" Width="300">
+    <Border Padding="20">
+        <Grid>
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Input textbox -->
+                    <TextBlock Text="Input number:" Grid.Column="0"/>
+                    <TextBox Grid.Column="1" x:Name="input"/>
+                </Grid>
+                
+                <!-- input order -->
+                <TextBlock Text="Numbers given as input:" 
+                           Margin="0,10,0,0" 
+                           TextDecorations="Underline" 
+                           FontWeight="SemiBold"/>
+                <TextBlock Text="" x:Name="unsortedList"/>
+                
+                <!-- input in sorted order -->
+                <TextBlock Text="Numbers sorted:"
+                           Margin="0,30,0,0" 
+                           TextDecorations="Underline"
+                           FontWeight="SemiBold"/>
+                <TextBlock Text="" x:Name="sortedList"/>
+            </StackPanel>
+        </Grid>
+    </Border>
 </Window>
