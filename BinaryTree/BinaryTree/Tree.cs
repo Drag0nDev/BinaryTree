@@ -1,4 +1,7 @@
-﻿namespace Binary_Tree.BinaryTree
+﻿using System;
+using System.Collections;
+
+namespace Binary_Tree.BinaryTree
 {
     public class Tree
     {
@@ -82,14 +85,14 @@
             }
         }
 
-        public void Print(Node N, ref string s)
+        public void PrintLH(Node N, ref string s)
         {
             if (N == null)
                 N = top;
 
             if (N.left != null)
             {
-                Print(N.left, ref s);
+                PrintLH(N.left, ref s);
                 s = s + N.value.ToString().PadLeft(3);
             }
             else
@@ -98,7 +101,36 @@
             }
 
             if (N.right != null)
-                Print(N.right, ref s);
+                PrintLH(N.right, ref s);
+        }
+
+        public void PrintHL(Node N, ref string s)
+        {
+            ArrayList list = new ArrayList();
+            putInArray(N, ref list);
+            list.Reverse();
+
+            foreach (Object obj in list)
+                s += obj.ToString().PadLeft(3);
+        }
+
+        private void putInArray(Node N, ref ArrayList list)
+        {
+            if (N == null)
+                N = top;
+
+            if (N.left != null)
+            {
+                putInArray(N.left, ref list);
+                list.Add(N.value.ToString());
+            }
+            else
+            { 
+                list.Add(N.value.ToString());
+            }
+
+            if (N.right != null)
+                putInArray(N.right, ref list);
         }
     }
 }

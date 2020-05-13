@@ -11,33 +11,70 @@
             <StackPanel>
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
                     <!-- Input textbox -->
-                    <TextBlock Text="Input number:" Grid.Column="0"/>
-                    <TextBox Grid.Column="1" x:Name="input"/>
-                    <Button Grid.Column="2" 
+                    <TextBlock Text="Input number:" Grid.Column="0" />
+                    <TextBox Grid.Column="1" x:Name="input" />
+                    <Button Grid.Column="2"
+                            x:Name="Add"
                             Margin="10 0 0 0"
                             Content="Add"
-                            Click="ButtonBase_OnClick"/>
+                            Click="Add_OnClick" />
                 </Grid>
-                
+
                 <!-- input order -->
-                <TextBlock Text="Numbers given as input:" 
-                           Margin="0,10,0,0" 
-                           TextDecorations="Underline" 
-                           FontWeight="SemiBold"/>
-                <TextBlock Text="" x:Name="unsortedList"/>
-                
-                <!-- input in sorted order -->
-                <TextBlock Text="Numbers sorted:"
-                           Margin="0,30,0,0" 
+                <TextBlock Text="Numbers given as input:"
+                           Margin="0,10,0,0"
                            TextDecorations="Underline"
-                           FontWeight="SemiBold"/>
-                <TextBlock Text="" x:Name="sortedList"/>
+                           FontWeight="SemiBold" />
+                <TextBlock Text="" x:Name="unsortedList" />
+
+                <!-- input in sorted order -->
+                <TextBlock x:Name="sortedText" 
+                           Text="Numbers sorted:"
+                           Margin="0,30,0,0"
+                           TextDecorations="Underline"
+                           FontWeight="SemiBold"
+                           Visibility="Hidden" />
+
+                <!-- numbers sorted from Low to High -->
+                <TextBlock x:Name="sortedListLHText"
+                           Text="Numbers sorterd Low to High"
+                           Margin="0,5,0,0"
+                           TextDecorations="Underline"
+                           Visibility="Hidden" />
+                <TextBlock Text=""
+                           x:Name="sortedListLH"
+                           Visibility="Hidden" />
+
+                <!-- Numbers sorted from High to Low -->
+                <TextBlock x:Name="sortedListHLText"
+                           Text="Numbers sorterd High to Low"
+                           Margin="0,10,0,0"
+                           TextDecorations="Underline"
+                           Visibility="Hidden" />
+                <TextBlock Text=""
+                           x:Name="sortedListHL"
+                           Visibility="Hidden" />
             </StackPanel>
+            <!-- Buttons for showing the sorted lists-->
+            <Button x:Name="LH"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Width="75"
+                    Height="20"
+                    Content="LH"
+                    Click="LH_OnClick" />
+            <Button x:Name="HL"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Width="75"
+                    Height="20"
+                    Content="HL"
+                    Click="HL_OnClick" />
         </Grid>
     </Border>
 </Window>
