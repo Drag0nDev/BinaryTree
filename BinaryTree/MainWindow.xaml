@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BinaryTree"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="300">
-    <Border Padding="20">
+        Title="MainWindow" Height="400" Width="300">
+    <Border Padding="10">
         <Grid>
             <StackPanel>
                 <Grid>
@@ -25,15 +25,39 @@
                             Click="Add_OnClick" />
                 </Grid>
 
+                <Grid Margin="0 10 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0"
+                               Text="Amount of generated numbers:"
+                               TextWrapping="Wrap" />
+                    <TextBox x:Name="randomAmount"
+                             Grid.Column="1"
+                             Height="20" />
+                    <Button Grid.Column="2"
+                            x:Name="Random"
+                            Margin="10 0 0 0"
+                            Height="20"
+                            Content="Generate"
+                            Click="Random_OnClick" />
+                </Grid>
+
+
                 <!-- input order -->
                 <TextBlock Text="Numbers given as input:"
                            Margin="0,10,0,0"
                            TextDecorations="Underline"
                            FontWeight="SemiBold" />
-                <TextBlock Text="" x:Name="unsortedList" />
+                <TextBlock Text=""
+                           x:Name="unsortedList"
+                           TextWrapping="Wrap" />
 
                 <!-- input in sorted order -->
-                <TextBlock x:Name="sortedText" 
+                <TextBlock x:Name="sortedText"
                            Text="Numbers sorted:"
                            Margin="0,30,0,0"
                            TextDecorations="Underline"
@@ -48,7 +72,8 @@
                            Visibility="Hidden" />
                 <TextBlock Text=""
                            x:Name="sortedListLH"
-                           Visibility="Hidden" />
+                           Visibility="Hidden"
+                           TextWrapping="Wrap" />
 
                 <!-- Numbers sorted from High to Low -->
                 <TextBlock x:Name="sortedListHLText"
@@ -58,15 +83,17 @@
                            Visibility="Hidden" />
                 <TextBlock Text=""
                            x:Name="sortedListHL"
-                           Visibility="Hidden" />
+                           Visibility="Hidden"
+                           TextWrapping="Wrap" />
             </StackPanel>
             <!-- Buttons for showing the sorted lists-->
             <Button x:Name="LH"
-                    HorizontalAlignment="Center"
+                    HorizontalAlignment="Right"
                     VerticalAlignment="Bottom"
                     Width="75"
                     Height="20"
                     Content="LH"
+                    Margin="0 0 80 0"
                     Click="LH_OnClick" />
             <Button x:Name="HL"
                     HorizontalAlignment="Right"

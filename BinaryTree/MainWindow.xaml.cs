@@ -28,34 +28,38 @@ namespace BinaryTree
 
         private void Add_OnClick(object sender, RoutedEventArgs e)
         {
-            //input the new value in the unsorted list
-            if (unsortedList == null)
+            int number;
+            if (input.Text != "" || Int32.TryParse(input.Text, out number))
             {
-                s = input.Text;
+                //input the new value in the unsorted list
+                if (unsortedList.Text == "")
+                {
+                    s = input.Text;
+                }
+                else
+                {
+                    s += " " + input.Text;
+                }
+
+                //input the new value in the Tree
+                myTree.AddRc(Int32.Parse(input.Text));
+
+                PrintValues();
+            }
+            else if (input.Text != "")
+            {
+                MessageBox.Show("Wrong input value given.", "Wrong input detected");
             }
             else
             {
-                s += " " + input.Text;
+                MessageBox.Show("No value is given.", "No input detected");
             }
-
-            //input the new value in the Tree
-            myTree.AddRc(Int32.Parse(input.Text));
-
-            //make sorted tree list
-            string treeString1 = "";
-            string treeString2 = "";
-            myTree.PrintLH(null, ref treeString1);
-            myTree.PrintHL(null, ref treeString2);
-
-            //print the lists
-            PrintLists(ref s, ref treeString1, ref treeString2);
-
+           
             //clear the input field
             input.Clear();
         }
 
-        private void LH_OnClick(object sender, RoutedEventArgs e)
-        {
+        private void LH_OnClick(object sender, RoutedEventArgs e){
             if (sortedText.Visibility == Visibility.Hidden)
                 sortedText.Visibility = Visibility.Visible;
             else if (sortedText.Visibility == Visibility.Visible && sortedListHLText.Visibility == Visibility.Hidden)
@@ -90,6 +94,49 @@ namespace BinaryTree
                 sortedListHLText.Visibility = Visibility.Hidden;
                 sortedListHL.Visibility = Visibility.Hidden;
             }
+        }
+
+        private void Random_OnClick(object sender, RoutedEventArgs e)
+        {
+            int number;
+            if (Int32.TryParse(randomAmount.Text, out number))
+            {
+                var rand = new Random();
+                for (int i = 0; i < Int32.Parse(randomAmount.Text); i++)
+                {
+                    int value = rand.Next(101);
+                    
+                    if (unsortedList.Text == "")
+                    {
+                        s = value.ToString();
+                    }
+                    else
+                    {
+                        s += " " + value;
+                    }
+                    
+                    myTree.AddRc(value);
+                    PrintValues();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No value is given.", "No input detected");
+            }
+            
+            randomAmount.Clear();
+        }
+
+        private void PrintValues()
+        {
+            //make sorted tree list
+            string treeString1 = "";
+            string treeString2 = "";
+            myTree.PrintLH(null, ref treeString1);
+            myTree.PrintHL(null, ref treeString2);
+
+            //print the lists
+            PrintLists(ref s, ref treeString1, ref treeString2);
         }
     }
 }
