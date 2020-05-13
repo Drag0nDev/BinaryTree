@@ -150,7 +150,9 @@ namespace BinaryTree
 
         private void Show_OnClick(object sender, RoutedEventArgs e)
         {
-            
+            string message = "this will be the tree";
+            string title = "Binary tree visualisation";
+            MessageBox.Show(message, title);
         }
     }
 }

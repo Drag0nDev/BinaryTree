@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BinaryTree"
         mc:Ignorable="d"
-        Title="MainWindow" Height="420" Width="500">
+        Title="MainWindow"
+        ResizeMode="NoResize"
+        Height="600"
+        Width="500">
     <Border Padding="10">
         <Grid>
             <StackPanel>
@@ -93,8 +96,10 @@
                                    TextWrapping="Wrap" />
                     </ItemsControl>
                 </ScrollViewer>
+                
+                
             </StackPanel>
-
+            
             <!-- button for showing tree -->
             <Button x:Name="Show"
                     HorizontalAlignment="Right"
@@ -131,5 +136,6 @@
                     Content="HL"
                     Click="HL_OnClick" />
         </Grid>
+
     </Border>
 </Window>

@@ -136,8 +136,11 @@ namespace Binary_Tree.BinaryTree
         public virtual void deleteTree(Node node) 
         { 
             top = null; 
-        } 
-        
-        
+        }
+
+        public void showTree(ref string s)
+        {
+            
+        }
     }
 }

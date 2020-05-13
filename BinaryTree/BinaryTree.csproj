@@ -50,6 +50,7 @@
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
         </ApplicationDefinition>
+        <Page Include="Binary Tree.xaml" />
         <Page Include="MainWindow.xaml">
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
@@ -57,6 +58,9 @@
         <Compile Include="App.xaml.cs">
             <DependentUpon>App.xaml</DependentUpon>
             <SubType>Code</SubType>
+        </Compile>
+        <Compile Include="Binary Tree.xaml.cs">
+          <DependentUpon>Binary Tree.xaml</DependentUpon>
         </Compile>
         <Compile Include="BinaryTree\Node.cs" />
         <Compile Include="BinaryTree\Tree.cs" />

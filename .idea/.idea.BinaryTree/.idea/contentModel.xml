@@ -9,6 +9,8 @@
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Binary Tree.xaml" t="Include" />
+        <e p="Binary Tree.xaml.cs" t="Include" />
         <e p="BinaryTree" t="Include">
           <e p="Node.cs" t="Include" />
           <e p="Tree.cs" t="Include" />
