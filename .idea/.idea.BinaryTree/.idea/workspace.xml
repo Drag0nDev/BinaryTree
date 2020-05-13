@@ -4,9 +4,6 @@
     <list default="true" id="3f7ce77b-0ec9-44d7-9225-4ced485043da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BinaryTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BinaryTree/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryTree/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTree/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTree/obj/Debug/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/obj/Debug/MainWindow.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTree/obj/Debug/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/obj/Debug/MainWindow.g.i.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +46,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/BinaryTree/BinaryTree/Tree.cs" />
-        <option value="$PROJECT_DIR$/BinaryTree/MainWindow.xaml" />
         <option value="$PROJECT_DIR$/BinaryTree/MainWindow.xaml.cs" />
+        <option value="$PROJECT_DIR$/BinaryTree/MainWindow.xaml" />
       </list>
     </option>
   </component>
@@ -100,7 +97,7 @@
       <updated>1589279519212</updated>
       <workItem from="1589279520589" duration="230000" />
       <workItem from="1589279824607" duration="8857000" />
-      <workItem from="1589360991352" duration="14513000" />
+      <workItem from="1589360991352" duration="15223000" />
     </task>
     <servers />
   </component>
@@ -137,22 +134,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.-1.right/0.0.1536.864@0.0.1536.864" timestamp="1589373841045" />
-    <state width="1493" height="138" key="GridCell.Tab.0.bottom" timestamp="1589383033715">
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom" timestamp="1589383818978">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589383033715" />
-    <state width="1493" height="138" key="GridCell.Tab.0.center" timestamp="1589383033715">
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589383818978" />
+    <state width="1493" height="138" key="GridCell.Tab.0.center" timestamp="1589383818978">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589383033715" />
-    <state width="1493" height="138" key="GridCell.Tab.0.left" timestamp="1589383033715">
+    <state width="1493" height="138" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589383818978" />
+    <state width="1493" height="138" key="GridCell.Tab.0.left" timestamp="1589383818978">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589383033715" />
-    <state width="1493" height="138" key="GridCell.Tab.0.right" timestamp="1589383033715">
+    <state width="1493" height="138" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589383818978" />
+    <state width="1493" height="138" key="GridCell.Tab.0.right" timestamp="1589383818978">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="138" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589383033715" />
+    <state width="1493" height="138" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589383818978" />
     <state width="1493" height="179" key="GridCell.Tab.1.bottom" timestamp="1589383030352">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -313,24 +310,5 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="47" y="65" width="418" height="349" key="dock-window-7/0.0.1536.864@0.0.1536.864" timestamp="1589382942702" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BinaryTree/MainWindow.xaml.cs</url>
-          <line>106</line>
-          <properties documentPath="$PROJECT_DIR$/BinaryTree/MainWindow.xaml.cs" initialLine="106">
-            <startOffsets>
-              <option value="3519" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3546" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

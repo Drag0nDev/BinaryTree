@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BinaryTree"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="300">
+        Title="MainWindow" Height="400" Width="400">
     <Border Padding="10">
         <Grid>
             <StackPanel>
@@ -17,11 +17,14 @@
                     </Grid.ColumnDefinitions>
                     <!-- Input textbox -->
                     <TextBlock Text="Input number:" Grid.Column="0" />
-                    <TextBox Grid.Column="1" x:Name="input" />
+                    <TextBox Grid.Column="1" 
+                             x:Name="input" 
+                             Width="100"/>
                     <Button Grid.Column="2"
                             x:Name="Add"
                             Margin="10 0 0 0"
                             Content="Add"
+                            Width="75"
                             Click="Add_OnClick" />
                 </Grid>
 
@@ -37,11 +40,13 @@
                                TextWrapping="Wrap" />
                     <TextBox x:Name="randomAmount"
                              Grid.Column="1"
-                             Height="20" />
+                             Height="20"
+                             Width="100"/>
                     <Button Grid.Column="2"
                             x:Name="Random"
                             Margin="10 0 0 0"
                             Height="20"
+                            Width="75"
                             Content="Generate"
                             Click="Random_OnClick" />
                 </Grid>
