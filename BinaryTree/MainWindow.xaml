@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BinaryTree"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="400">
+        Title="MainWindow" Height="420" Width="500">
     <Border Padding="10">
         <Grid>
             <StackPanel>
@@ -17,9 +17,9 @@
                     </Grid.ColumnDefinitions>
                     <!-- Input textbox -->
                     <TextBlock Text="Input number:" Grid.Column="0" />
-                    <TextBox Grid.Column="1" 
-                             x:Name="input" 
-                             Width="100"/>
+                    <TextBox Grid.Column="1"
+                             x:Name="input"
+                             Width="100" />
                     <Button Grid.Column="2"
                             x:Name="Add"
                             Margin="10 0 0 0"
@@ -41,7 +41,7 @@
                     <TextBox x:Name="randomAmount"
                              Grid.Column="1"
                              Height="20"
-                             Width="100"/>
+                             Width="100" />
                     <Button Grid.Column="2"
                             x:Name="Random"
                             Margin="10 0 0 0"
@@ -51,46 +51,69 @@
                             Click="Random_OnClick" />
                 </Grid>
 
+                <ScrollViewer Height="250" Margin="0 10 0 0">
+                    <ItemsControl>
+                        <!-- input order -->
+                        <TextBlock Text="Numbers given as input:"
+                                   Margin="0,10,0,0"
+                                   TextDecorations="Underline"
+                                   FontWeight="SemiBold" />
+                        <TextBlock Text=""
+                                   x:Name="unsortedList"
+                                   TextWrapping="Wrap" />
 
-                <!-- input order -->
-                <TextBlock Text="Numbers given as input:"
-                           Margin="0,10,0,0"
-                           TextDecorations="Underline"
-                           FontWeight="SemiBold" />
-                <TextBlock Text=""
-                           x:Name="unsortedList"
-                           TextWrapping="Wrap" />
+                        <!-- input in sorted order -->
+                        <TextBlock x:Name="sortedText"
+                                   Text="Numbers sorted:"
+                                   Margin="0,30,0,0"
+                                   TextDecorations="Underline"
+                                   FontWeight="SemiBold"
+                                   Visibility="Hidden" />
 
-                <!-- input in sorted order -->
-                <TextBlock x:Name="sortedText"
-                           Text="Numbers sorted:"
-                           Margin="0,30,0,0"
-                           TextDecorations="Underline"
-                           FontWeight="SemiBold"
-                           Visibility="Hidden" />
+                        <!-- numbers sorted from Low to High -->
+                        <TextBlock x:Name="sortedListLHText"
+                                   Text="Numbers sorterd Low to High"
+                                   Margin="0,5,0,0"
+                                   TextDecorations="Underline"
+                                   Visibility="Hidden" />
+                        <TextBlock Text=""
+                                   x:Name="sortedListLH"
+                                   Visibility="Hidden"
+                                   TextWrapping="Wrap" />
 
-                <!-- numbers sorted from Low to High -->
-                <TextBlock x:Name="sortedListLHText"
-                           Text="Numbers sorterd Low to High"
-                           Margin="0,5,0,0"
-                           TextDecorations="Underline"
-                           Visibility="Hidden" />
-                <TextBlock Text=""
-                           x:Name="sortedListLH"
-                           Visibility="Hidden"
-                           TextWrapping="Wrap" />
-
-                <!-- Numbers sorted from High to Low -->
-                <TextBlock x:Name="sortedListHLText"
-                           Text="Numbers sorterd High to Low"
-                           Margin="0,10,0,0"
-                           TextDecorations="Underline"
-                           Visibility="Hidden" />
-                <TextBlock Text=""
-                           x:Name="sortedListHL"
-                           Visibility="Hidden"
-                           TextWrapping="Wrap" />
+                        <!-- Numbers sorted from High to Low -->
+                        <TextBlock x:Name="sortedListHLText"
+                                   Text="Numbers sorterd High to Low"
+                                   Margin="0,10,0,0"
+                                   TextDecorations="Underline"
+                                   Visibility="Hidden" />
+                        <TextBlock Text=""
+                                   x:Name="sortedListHL"
+                                   Visibility="Hidden"
+                                   TextWrapping="Wrap" />
+                    </ItemsControl>
+                </ScrollViewer>
             </StackPanel>
+
+            <!-- button for showing tree -->
+            <Button x:Name="Show"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Width="75"
+                    Height="20"
+                    Content="Show"
+                    Margin="0 0 240 0"
+                    Click="Show_OnClick" />
+            <!-- button for deleting nodes -->
+            <Button x:Name="Delete"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Width="75"
+                    Height="20"
+                    Content="Delete"
+                    Margin="0 0 160 0"
+                    Click="Delete_OnClick" />
+
             <!-- Buttons for showing the sorted lists-->
             <Button x:Name="LH"
                     HorizontalAlignment="Right"

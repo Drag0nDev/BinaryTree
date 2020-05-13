@@ -1,4 +1,6 @@
-﻿namespace Binary_Tree.BinaryTree
+﻿using System;
+
+namespace Binary_Tree.BinaryTree
 {
     public class Node
     {
@@ -11,6 +13,11 @@
             value = initial;
             left = null;
             right = null;
+        }
+
+        ~Node()
+        {
+            Console.WriteLine("node with value {0} deleted!", value);
         }
     }
 }

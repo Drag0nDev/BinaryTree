@@ -5,7 +5,7 @@ namespace Binary_Tree.BinaryTree
 {
     public class Tree
     {
-        Node top;
+        public Node top;
 
         public Tree()
         {
@@ -132,5 +132,12 @@ namespace Binary_Tree.BinaryTree
             if (N.right != null)
                 putInArray(N.right, ref list);
         }
+
+        public virtual void deleteTree(Node node) 
+        { 
+            top = null; 
+        } 
+        
+        
     }
 }

@@ -138,5 +138,19 @@ namespace BinaryTree
             //print the lists
             PrintLists(ref s, ref treeString1, ref treeString2);
         }
+
+        private void Delete_OnClick(object sender, RoutedEventArgs e)
+        {
+            myTree.deleteTree(myTree.top);
+            myTree.top = null;
+            unsortedList.Text = "";
+            sortedListLH.Text = "";
+            sortedListHL.Text = "";
+        }
+
+        private void Show_OnClick(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
