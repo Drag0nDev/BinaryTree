@@ -17,6 +17,11 @@ namespace Binary_Tree.BinaryTree
             top = new Node(initial);
         }
 
+        public Tree(Node initial)
+        {
+            top = initial;
+        }
+
         public void Add(int value)
         {
             if (top == null) //tree is empty

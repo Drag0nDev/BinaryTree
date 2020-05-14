@@ -5,8 +5,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:BinaryTree"
         mc:Ignorable="d"
-        Title="Binary_Tree" 
-        Height="500" 
+        Title="Binary_Tree"
+        Height="500"
         Width="500"
         ResizeMode="NoResize">
     <Grid>
@@ -37,7 +37,7 @@
                 X2="73" Y2="385"
                 Stroke="Red"
                 StrokeThickness="8" />
-            
+
             <Line
                 Name="currentToRight"
                 Visibility="Hidden"
@@ -49,14 +49,13 @@
 
         <!-- Parent node -->
         <Button x:Name="parent"
-                Width="50" Height="50" Content="20"
+                Width="50" Height="50" Content=""
                 Grid.Column="1" Grid.Row="0"
-                Visibility="Hidden"
-                >
+                Visibility="Hidden">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White"/>
+                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White" />
                         <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center"
                                           VerticalAlignment="Center" />
                     </Grid>
@@ -67,15 +66,14 @@
         <!-- Focused node -->
         <!-- This button is useless -->
         <Button x:Name="focus"
-                Width="50" Height="50" Content="15"
+                Width="50" Height="50" Content=""
                 Grid.Column="1" Grid.Row="1"
                 Visibility="Hidden"
-                Click="Focus_OnClick"
-                >
+                Click="Focus_OnClick">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White"/>
+                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White" />
                         <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center"
                                           VerticalAlignment="Center" />
                     </Grid>
@@ -86,14 +84,14 @@
         <!-- Child Nodes -->
         <!-- Left child -->
         <Button x:Name="left"
-                Width="50" Height="50" Content="10"
+                Width="50" Height="50" Content=""
                 Grid.Column="0" Grid.Row="2"
                 Visibility="Hidden"
-                >
+                Click="Left_OnClick">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White"/>
+                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White" />
                         <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center"
                                           VerticalAlignment="Center" />
                     </Grid>
@@ -103,26 +101,26 @@
 
         <!-- Right child -->
         <Button x:Name="right"
-                Width="50" Height="50" Content="17"
+                Width="50" Height="50" Content=""
                 Grid.Column="2" Grid.Row="2"
                 Visibility="Hidden"
-                >
+                Click="Right_OnClick">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid>
-                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White"/>
+                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White" />
                         <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center"
                                           VerticalAlignment="Center" />
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        
-        <Button 
+
+        <Button
             Name="showAll"
             Width="75" Height="20"
             Content="Show all"
             Grid.Column="1" Grid.Row="2"
-            Click="ShowAll_OnClick"></Button>
+            Click="ShowAll_OnClick" />
     </Grid>
 </Window>
