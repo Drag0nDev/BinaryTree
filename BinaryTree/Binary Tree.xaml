@@ -5,8 +5,124 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:BinaryTree"
         mc:Ignorable="d"
-        Title="Binary_Tree" Height="450" Width="800">
+        Title="Binary_Tree" 
+        Height="500" 
+        Width="500"
+        ResizeMode="NoResize">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Canvas Height="500" Width="500">
+            <Line
+                Name="parentToCurrent"
+                Visibility="Hidden"
+                X1="243" Y1="230"
+                X2="243" Y2="73"
+                Stroke="Red"
+                StrokeThickness="8" />
+
+            <Line
+                Name="currentToLeft"
+                Visibility="Hidden"
+                X1="243" Y1="230"
+                X2="73" Y2="385"
+                Stroke="Red"
+                StrokeThickness="8" />
+            
+            <Line
+                Name="currentToRight"
+                Visibility="Hidden"
+                X1="243" Y1="230"
+                X2="397" Y2="375"
+                Stroke="Red"
+                StrokeThickness="8" />
+        </Canvas>
+
+        <!-- Parent node -->
+        <Button x:Name="parent"
+                Width="50" Height="50" Content="20"
+                Grid.Column="1" Grid.Row="0"
+                Visibility="Hidden"
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!-- Focused node -->
+        <!-- This button is useless -->
+        <Button x:Name="focus"
+                Width="50" Height="50" Content="15"
+                Grid.Column="1" Grid.Row="1"
+                Visibility="Hidden"
+                Click="Focus_OnClick"
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!-- Child Nodes -->
+        <!-- Left child -->
+        <Button x:Name="left"
+                Width="50" Height="50" Content="10"
+                Grid.Column="0" Grid.Row="2"
+                Visibility="Hidden"
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!-- Right child -->
+        <Button x:Name="right"
+                Width="50" Height="50" Content="17"
+                Grid.Column="2" Grid.Row="2"
+                Visibility="Hidden"
+                >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Stroke="Black" StrokeThickness="3" Fill="White"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         
+        <Button 
+            Name="showAll"
+            Width="75" Height="20"
+            Content="Show all"
+            Grid.Column="1" Grid.Row="2"
+            Click="ShowAll_OnClick"></Button>
     </Grid>
 </Window>

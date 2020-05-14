@@ -137,10 +137,6 @@ namespace Binary_Tree.BinaryTree
         { 
             top = null; 
         }
-
-        public void showTree(ref string s)
-        {
-            
-        }
+        
     }
 }
