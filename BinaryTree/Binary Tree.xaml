@@ -51,6 +51,7 @@
         <Button x:Name="parent"
                 Width="50" Height="50" Content=""
                 Grid.Column="1" Grid.Row="0"
+                IsEnabled="False"
                 Visibility="Hidden">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
