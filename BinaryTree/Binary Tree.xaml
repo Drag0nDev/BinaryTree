@@ -21,6 +21,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
+        <!-- Visualistion lines tree -->
         <Canvas Height="500" Width="500">
             <Line
                 Name="parentToCurrent"
@@ -116,12 +117,5 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-
-        <Button
-            Name="showAll"
-            Width="75" Height="20"
-            Content="Show all"
-            Grid.Column="1" Grid.Row="2"
-            Click="ShowAll_OnClick" />
     </Grid>
 </Window>

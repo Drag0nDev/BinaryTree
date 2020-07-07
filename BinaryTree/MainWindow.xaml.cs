@@ -151,7 +151,7 @@ namespace BinaryTree
         private void Show_OnClick(object sender, RoutedEventArgs e)
         {
             Binary_Tree binaryTree = new Binary_Tree(ref myTree);
-            binaryTree.Show();
+            binaryTree.ShowDialog();
         }
     }
 }
